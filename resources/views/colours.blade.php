@@ -49,6 +49,8 @@
                     <x-headings.h2 class="mb-4">Fonts</x-headings.h2>
                     <hr class="mb-8" />
 
+                    <x-headings.h3>Headings: Roboto</x-headings>
+                    <p class="font-sans">Content &amp; Navigation: Noto Sans</p>
                 </div>
             </div>
         </div>

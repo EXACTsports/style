@@ -1,3 +1,3 @@
-<h5 {{ $attributes->merge(['class' => 'mt-0 mb-2 text-lg font-medium leading-5']) }}>
+<h5 {{ $attributes->merge(['class' => 'text-lg font-semibold']) }}>
 	{{ $slot }}
 </h5>

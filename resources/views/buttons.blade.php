@@ -19,7 +19,7 @@
                     <x-headings.h2 class="mb-4">Links</x-headings.h2>
                     <hr class="mb-8" />
                     
-                    <x-button href="#">Go Somewhere</x-button>
+                    <x-anchor href="#">Go Somewhere</x-anchor>
                 </div>
             </div>
         </div>
