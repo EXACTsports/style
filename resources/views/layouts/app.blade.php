@@ -156,9 +156,9 @@
                                 EXACT Styles
                             </div>
                             <nav class="flex-1 px-2 mt-5 space-y-1 bg-gray-800">
-                                <a href="#"
-                                    class="flex items-center px-2 py-2 text-sm font-medium text-white bg-gray-900 rounded-md group">
-                                    <svg class="flex-shrink-0 w-6 h-6 mr-3 text-gray-300" xmlns="http://www.w3.org/2000/svg"
+                                <a href="{{ route('dashboard') }}"
+                                    class="flex items-center px-2 py-2 text-base font-medium text-white {{ (request()->routeIs('dashboard')) ? 'bg-gray-900' : '' }} hover:bg-gray-700 rounded-md group">
+                                    <svg class="flex-shrink-0 w-6 h-6 mr-4 text-gray-300" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -167,7 +167,7 @@
                                 </a>
                                 <div x-data="{ open: false }">
                                     <div @click="open = ! open"
-                                        class="flex items-center px-2 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white group">
+                                        class="flex items-center px-2 py-2 text-base font-medium text-gray-300 rounded-md {{ (request()->routeIs('style.*')) ? 'bg-gray-900' : '' }} hover:bg-gray-700 hover:text-white group">
                                         <!-- Heroicon name: color swatch -->
                                         <svg class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -177,8 +177,8 @@
                                         Styles
                                     </div>
                                     <ul x-show="open" class="pl-12 text-gray-300 ">
-                                        <li><a href="{{ route('colours') }}">Colours</a></li>
-                                        <li><a href="{{ route('colours') }}">Fonts</a></li>
+                                        <li><a href="{{ route('style.colours') }}">Colours</a></li>
+                                        <li><a href="{{ route('style.colours') }}">Fonts</a></li>
                                     </ul>
                                 </div>
                                 <div x-data="{ open: false }">
@@ -199,7 +199,7 @@
                                 </div>
                                 <div x-data="{ open: false }">
                                     <div @click="open = ! open"
-                                        class="flex items-center px-2 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white group">
+                                        class="flex items-center px-2 py-2 text-base font-medium text-gray-300 rounded-md {{ (request()->routeIs('comp.*')) ? 'bg-gray-900' : '' }} hover:bg-gray-700 hover:text-white group">
                                         <!-- Heroicon name: cog -->
                                         <svg class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -210,11 +210,11 @@
                                         Components
                                     </div>
                                     <ul x-show="open" class="pl-12 text-gray-300 ">
-                                        <li><a href="{{ route('headings') }}">Headings</a></li>
-                                        <li><a href="{{ route('buttons') }}">Buttons</a></li>
-                                        <li><a href="{{ route('buttons') }}">Links</a></li>
-                                        <li><a href="{{ route('tables') }}">Tables</a></li>
-                                        <li><a href="{{ route('inputs') }}">Inputs</a></li>
+                                        <li><a href="{{ route('comp.headings') }}">Headings</a></li>
+                                        <li><a href="{{ route('comp.buttons') }}">Buttons</a></li>
+                                        <li><a href="{{ route('comp.links') }}">Links</a></li>
+                                        <li><a href="{{ route('comp.tables') }}">Tables</a></li>
+                                        <li><a href="{{ route('comp.inputs') }}">Inputs</a></li>
                                     </ul>
                                 </div>
                             </nav>

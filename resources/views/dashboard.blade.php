@@ -12,8 +12,8 @@
                     <div class="mt-2 mb-4">
                         <x-headings.h2>Styles</x-headings.h2>
                         <ul>
-                            <li><a href="{{route('colours')}}">Colours</a></li>
-                            <li><a href="{{route('colours')}}">Fonts</a></li>
+                            <li><a href="{{route('style.colours')}}">Colours</a></li>
+                            <li><a href="{{route('style.colours')}}">Fonts</a></li>
                         </ul>
                     </div>
                     
@@ -29,12 +29,12 @@
                         <x-headings.h2>Components</x-headings.h2>
                         <ul>
                             <li><a href="#">Logo</a></li>
-                            <li><a href="{{route('headings')}}">Headings</a></li>
-                            <li><a href="{{route('buttons')}}">Buttons</a></li>
-                            <li><a href="{{route('buttons')}}">Links</a></li>
+                            <li><a href="{{route('comp.headings')}}">Headings</a></li>
+                            <li><a href="{{route('comp.buttons')}}">Buttons</a></li>
+                            <li><a href="{{route('comp.buttons')}}">Links</a></li>
                             <li><a href="#">Badges</a></li>
-                            <li><a href="{{route('tables')}}">Tables</a></li>
-                            <li><a href="{{route('inputs')}}">Inputs</a></li>
+                            <li><a href="{{route('comp.tables')}}">Tables</a></li>
+                            <li><a href="{{route('comp.inputs')}}">Inputs</a></li>
                         </ul>
                     </div>
                 </div>
