@@ -9,13 +9,20 @@
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                 <div class="p-6">
-                    <x-headings.h2 class="mb-4">Spect8 Icon Links</x-headings.h2>
+                    <x-headings.h2 class="mb-4">Links</x-headings.h2>
                     <hr class="mb-8" />
                     
-                    <x-anchor href="#">Link</x-anchor>
-                    <x-icon-link icon="edit"></x-icon-link>
-                    <x-icon-link icon="delete" />
-                    <x-icon-link icon="share" />
+                    <p><x-anchor href="#">Standard Link in Text (Gray)</x-anchor></p>
+                    <p><x-anchor href="#" color="bright-orange">Standard Link in Text (Bright Orange)</x-anchor></p>
+                    <p><x-anchor href="#" color="maroon">Standard Link in Text (Maroon)</x-anchor></p>        
+                </div>
+                <div class="p-6">
+                    <x-headings.h2 class="mt-8 mb-4">Icon Links</x-headings.h2>
+                    <hr class="mb-8" />
+                    <x-icon-link href="#" icon="football"></x-icon-link>
+                    <x-icon-link href="#" icon="edit"></x-icon-link>
+
+                    
                 </div>
             </div>
         </div>
