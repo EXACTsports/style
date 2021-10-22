@@ -9,20 +9,35 @@
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                 <div class="p-6">
-                    <x-headings.h2 class="mb-4">Links</x-headings.h2>
+                    <x-headings.h2 class="mb-4">EXACT Links</x-headings.h2>
                     <hr class="mb-8" />
                     
-                    <p><x-anchor href="#">Standard Link in Text (Gray)</x-anchor></p>
-                    <p><x-anchor href="#" color="bright-orange">Standard Link in Text (Bright Orange)</x-anchor></p>
-                    <p><x-anchor href="#" color="maroon">Standard Link in Text (Maroon)</x-anchor></p>        
+                    <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue-500">link (blue-500)</x-anchor> in a paragraph.</p>
+                    <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue-500" icon="back">link (blue-500)</x-anchor>
+                        with a back icon in a paragraph.</p>
+                    <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue-500" icon="ext">link (blue-500)</x-anchor>
+                            with an external link icon in a paragraph.</p>
+                    <p class="text-gray-800">This is a standard <x-anchor href="#" color="logo-orange">link (logo-orange)</x-anchor> in a
+                        paragraph, using the EXACT Sport Logo Orange.</p> 
+                </div>
+                <div class="p-6">
+                    <x-headings.h2 class="mb-4">Spect8 Links</x-headings.h2>
+                    <hr class="mb-8" />
+                
+                    <p class="text-gray-800">This is a standard <x-anchor href="#" color="bright-orange">link (bright-orange)</x-anchor>
+                        in a paragraph, using the Spect8 Logo Orange.</p>
+                    <p class="text-gray-800">This is a standard <x-anchor href="#" color="maroon">link (maroon)</x-anchor> in a
+                        paragraph.</p>
                 </div>
                 <div class="p-6">
                     <x-headings.h2 class="mt-8 mb-4">Icon Links</x-headings.h2>
                     <hr class="mb-8" />
-                    <x-icon-link href="#" icon="football"></x-icon-link>
-                    <x-icon-link href="#" icon="edit"></x-icon-link>
-
                     
+                    <div><x-icon-link href="#" icon="football"></x-icon-link> (icon: football)</div>
+                    <div><x-icon-link href="#" icon="edit"></x-icon-link> (icon: edit)</div>
+                    <div><x-icon-link href="#" icon="delete"></x-icon-link> (icon: delete)</div>
+                    <div><x-icon-link href="#" icon="share"></x-icon-link> (icon: share)</div>
+                    <div><x-icon-link href="#" icon="label"></x-icon-link> (icon: label)</div>           
                 </div>
             </div>
         </div>

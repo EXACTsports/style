@@ -18,9 +18,9 @@ module.exports = {
                 'maroon' : '#8E1000',
                 
                 // orange
-                'bright-orange' : '#F28C00',
+                'bright-orange' : '#F28C00', // Spect8 Logo
                 'pale-orange' : '#F4BE76',
-                'logo-orange': '#fe5000',
+                'logo-orange': '#fe5000', // EXACT Logo
                 
                 // grey
                 'dark-gray': '#363F51',

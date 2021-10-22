@@ -31,7 +31,7 @@
                             <li><a href="#">Logo</a></li>
                             <li><a href="{{route('comp.headings')}}">Headings</a></li>
                             <li><a href="{{route('comp.buttons')}}">Buttons</a></li>
-                            <li><a href="{{route('comp.buttons')}}">Links</a></li>
+                            <li><a href="{{route('comp.links')}}">Links</a></li>
                             <li><a href="#">Badges</a></li>
                             <li><a href="{{route('comp.tables')}}">Tables</a></li>
                             <li><a href="{{route('comp.inputs')}}">Inputs</a></li>
