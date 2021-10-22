@@ -1,4 +1,4 @@
-@props(['href', 'color'=>'blue-500', 'icon', 'class'=>''])
+@props(['href', 'color'=>'blue-500', 'icon', 'class'=>'', 'target'=>'_blank'])
 
 @switch($color)
     @case('blue-500')
@@ -20,7 +20,7 @@
 
 @php ($default = $colorClass . ' ' . $class . ' font-sans hover:underline')
 
-<a href="{{ $href }}" class="{{ $default }}" {{ $attributes->whereStartsWith('x-') }}>{{ $slot }}</a>
+<a href="{{ $href }}" class="{{ $default }}" {{ $attributes->whereStartsWith('x-') }} target="{{$target}}">{{ $slot }}</a>
 @switch($icon ?? '')
     @case('back')
         <i class="far fa-arrow-alt-circle-left"></i>
