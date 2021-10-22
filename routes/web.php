@@ -21,9 +21,13 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/colours', function () {
-    return view('colours');
-})->name('style.colours');
+Route::get('/colors', function () {
+    return view('colors');
+})->name('style.colors');
+
+Route::get('/fonts', function () {
+    return view('fonts');
+})->name('style.fonts');
 
 Route::get('/headings', function () {
     return view('headings');

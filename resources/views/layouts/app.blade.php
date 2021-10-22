@@ -180,8 +180,8 @@
                                         Styles
                                     </div>
                                     <ul x-show="open" class="pl-12 text-gray-300 ">
-                                        <li><a href="{{ route('style.colours') }}">Colours</a></li>
-                                        <li><a href="{{ route('style.colours') }}">Fonts</a></li>
+                                        <li><a href="{{ route('style.colors') }}">Colors</a></li>
+                                        <li><a href="{{ route('style.fonts') }}">Fonts</a></li>
                                     </ul>
                                 </div>
                                 <div x-data="{ open: false }">
