@@ -7,11 +7,11 @@
                 <x-headings.h2 class="mb-4">Inputs</x-headings.h2>
                 <hr class="mb-8" />
 
-                <x-input.group for="textarea" label="Textarea">
+                <x-input.group for="textarea" label="Textarea" helpText="Sample Help Text">
                     <x-input.textarea></x-input.textarea>
                 </x-input.group>
 
-                <x-input.group for="text" label="Text">
+                <x-input.group for="text" label="Text" error="Sample error text">
                     <x-input.text />
                 </x-input.group>
 
