@@ -1,8 +1,8 @@
-@props(['href', 'color'=>'blue-500', 'icon', 'class'=>'', 'target'=>'_blank'])
+@props(['href', 'color'=>'blue', 'icon', 'class'=>'', 'target'=>'_blank'])
 
 @switch($color)
-    @case('blue-500')
-        @php ($colorClass = 'text-blue-500 hover:text-gray-900 active:text-gray-900')
+    @case('blue')
+        @php ($colorClass = 'text-blue-600 hover:text-gray-900 active:text-gray-900')
         @break
     @case('logo-orange')
         @php ($colorClass = 'text-logo-orange hover:text-gray-900 active:text-gray-900')

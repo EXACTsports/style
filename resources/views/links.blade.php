@@ -7,10 +7,10 @@
                 <x-headings.h2 class="mb-4">EXACT Links</x-headings.h2>
                 <hr class="mb-8" />
                 
-                <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue-500">link (blue-500)</x-anchor> in a paragraph.</p>
-                <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue-500" icon="back">link (blue-500)</x-anchor>
+                <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue">link (blue-600)</x-anchor> in a paragraph.</p>
+                <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue" icon="back">link (blue-600)</x-anchor>
                     with a back icon in a paragraph.</p>
-                <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue-500" icon="ext">link (blue-500)</x-anchor>
+                <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue" icon="ext">link (blue-600)</x-anchor>
                         with an external link icon in a paragraph.</p>
                 <p class="text-gray-800">This is a standard <x-anchor href="#" color="logo-orange">link (logo-orange)</x-anchor> in a
                     paragraph, using the EXACT Sport Logo Orange.</p> 
@@ -25,7 +25,7 @@
                     paragraph.</p>
             </div>
             <div class="p-6">
-                <x-headings.h2 class="mt-8 mb-4">Icon Links</x-headings.h2>
+                <x-headings.h2 class="mb-4">Spect8 Icon Links</x-headings.h2>
                 <hr class="mb-8" />
                 
                 <div><x-icon-link href="#" icon="football"></x-icon-link> (icon: football)</div>
