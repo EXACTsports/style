@@ -1,6 +1,6 @@
-@props(['icon'])
+@props(['icon', 'href'])
 
-<a href="#" class="hover:text-bright-orange">
+<a href="{{ $href }}" class="hover:text-bright-orange">
     @switch($icon)
         @case('football')
         <i {{ $attributes->merge(['class' => 'fas fa-futbol']) }}></i>

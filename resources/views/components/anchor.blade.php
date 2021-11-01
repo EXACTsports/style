@@ -1,31 +1,34 @@
-@props(['href', 'color'=>'blue', 'icon', 'class'=>'', 'target'=>'_blank'])
+@props(['href'=>'#', 'color'=>'blue', 'icon'=>'', 'target'=>'_blank'])
 
 @switch($color)
     @case('blue')
-        @php ($colorClass = 'text-blue-600 hover:text-gray-900 active:text-gray-900')
+        @php ($colors = 'text-blue-600 hover:text-gray-900 active:text-gray-900')
         @break
     @case('logo-orange')
-        @php ($colorClass = 'text-logo-orange hover:text-gray-900 active:text-gray-900')
+        @php ($colors = 'text-logo-orange hover:text-gray-900 active:text-gray-900')
         @break
 	@case('bright-orange')
-		@php ($colorClass = 'text-bright-orange hover:text-maroon active:text-gray-900')
+		@php ($colors = 'text-bright-orange hover:text-maroon active:text-gray-900')
         @break
-	@case('gray-900')
-		@php ($colorClass = 'text-gray-900 hover:text-maroon active:text-bright-orange')
-		@break
     @case('maroon')
-        @php ($colorClass = 'text-maroon hover:text-bright-orange active:text-bright-orange')
+        @php ($colors = 'text-maroon hover:text-bright-orange active:text-bright-orange')
         @break
 @endswitch
 
-@php ($default = $colorClass . ' ' . $class . ' font-sans hover:underline')
-
-<a href="{{ $href }}" class="{{ $default }}" {{ $attributes->whereStartsWith('x-') }} target="{{$target}}">{{ $slot }}</a>
-@switch($icon ?? '')
+@switch($icon)
     @case('back')
-        <i class="far fa-arrow-alt-circle-left"></i>
+        @php ($icon = "far fa-arrow-alt-circle-left")
         @break
     @case('ext')
-        <i class="far fa-external-link-square-alt"></i>
+        @php ($icon = "far fa-external-link-square-alt")
         @break
 @endswitch
+
+<a 
+    href="{{ $href }}" 
+    target="{{$target}}"
+    {{ $attributes->merge(['class' => 'hover:underline '.$colors]) }}
+    {{ $attributes->whereStartsWith('x-') }}
+    {{ $attributes->thatStartWith('wire:') }} 
+    >{{$slot}}</a>
+<i class="{{$icon ?? ''}}"></i>

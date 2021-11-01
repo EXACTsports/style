@@ -16,19 +16,19 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
 
     </head>
-    <body class="antialiased">
-        <div class="relative flex justify-center min-h-screen py-4 bg-gray-100 items-top dark:bg-gray-900 sm:items-center sm:pt-0">
+    <body class="antialiased text-gray-100 bg-gray-800">
+        <div class="relative flex justify-center min-h-screen py-4 items-top dark:bg-gray-900 sm:items-center sm:pt-0">
             <div class="max-w-6xl mx-auto text-center sm:px-6 lg:px-8">
-                <h1>EXACT Sports</h1>
+                <x-headings.h1>EXACT Sports</x-headings.h1>
                @if (Route::has('login'))
                 <div class="px-6 py-2 sm:block">
                     @auth
-                    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline dark:text-gray-500">Dashboard</a>
+                    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-100 hover:text-bright-orange">Dashboard</a>
                     @else
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline dark:text-gray-500">Log in</a>
+                    <a href="{{ route('login') }}" class="text-sm text-gray-100 hover:text-bright-orange">Log in</a>
                 
                     @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline dark:text-gray-500">Register</a>
+                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-100 hover:text-bright-orange">Register</a>
                     @endif
                     @endauth
                 </div>

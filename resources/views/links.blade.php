@@ -13,7 +13,7 @@
                 <p class="text-gray-800">This is a standard <x-anchor href="#" color="blue" icon="ext">link (blue-600)</x-anchor>
                         with an external link icon in a paragraph.</p>
                 <p class="text-gray-800">This is a standard <x-anchor href="#" color="logo-orange">link (logo-orange)</x-anchor> in a
-                    paragraph, using the EXACT Sport Logo Orange.</p> 
+                    paragraph, using the EXACT Sports Logo Orange.</p> 
             </div>
             <div class="p-6">
                 <x-headings.h2 class="mb-4">Spect8 Links</x-headings.h2>
