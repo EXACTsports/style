@@ -1,13 +1,20 @@
 @props([
 'id',
 'name',
+'label',
 'value',
 ])
 
-<input 
-    type="radio" 
-    id="{{ $id }}" 
-    name="{{ $name }}" 
-    value="{{ $value }}"
-    {{ $attributes->merge(['class' => 'focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300']) }}/>
-
+<div class="flex items-center">
+    <input 
+        id="{{ $id }}" 
+        name="{{ $name }}" 
+        type="radio"
+        value="{{ $value }}"
+        class="w-4 h-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
+    <label 
+        for="{{ $id }}" 
+        class="block ml-3 text-sm font-medium text-gray-700">
+        {{ $label }}
+    </label>
+</div>
