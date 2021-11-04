@@ -1,5 +1,13 @@
-<input {{ $attributes }}
-    type="checkbox"
-    class="block transition duration-150 ease-in-out border-gray-300 form-checkbox sm:text-sm sm:leading-5"
-/>
+@props([
+'id',
+'name',
+'value',
+])
+
+<input 
+    type="checkbox" 
+    id="{{ $id }}" 
+    name="{{ $name }}" 
+    value="{{ $value }}"
+    {{ $attributes->merge(['class' => 'w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500']) }}/>
 

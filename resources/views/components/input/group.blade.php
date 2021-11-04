@@ -7,37 +7,35 @@
 ])
 
 @if($inline)
-    <div>
-        <label for="{{ $for }}" class="block text-sm font-medium leading-5 text-gray-700">{{ $label }}</label>
-
-        <div class="relative mt-1 rounded-md shadow-sm">
+    <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
+        <label for="{{ $for }}" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
+            {{ $label }}
+        </label>
+        <div class="mt-1 sm:mt-0 sm:col-span-2">
             {{ $slot }}
-
-            @if ($error)
-                <div class="mt-1 text-sm text-red-500">{{ $error }}</div>
-            @endif
 
             @if ($helpText)
                 <p class="mt-2 text-sm text-gray-500">{{ $helpText }}</p>
+            @endif
+            @if ($error)
+                <p class="mt-1 text-sm text-red-500">{{ $error }}</p>
             @endif
         </div>
     </div>
 @else
-    <div class="mb-4">
-        <label for="{{ $for }}" class="block mb-2 font-medium text-gray-700">
+    <div class="sm:col-span-4">
+        <label for="{{ $for }}" class="block text-sm font-medium text-gray-700">
             {{ $label }}
         </label>
-
-        <div class="mt-1 sm:mt-0 sm:col-span-2">
+        <div class="flex mt-1 rounded-md">
             {{ $slot }}
-
-            @if ($error)
-                <div class="mt-1 text-sm text-red-500">{{ $error }}</div>
-            @endif
-
-            @if ($helpText)
-                <p class="mt-2 text-sm text-gray-500">{{ $helpText }}</p>
-            @endif
         </div>
+
+        @if ($helpText)
+            <p class="mt-2 text-sm text-gray-500">{{ $helpText }}</p>
+        @endif
+        @if ($error)
+            <p class="mt-1 text-sm text-red-500">{{ $error }}</p>
+        @endif
     </div>
 @endif

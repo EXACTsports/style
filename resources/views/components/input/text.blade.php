@@ -1,4 +1,13 @@
-<input 
-    {{ $attributes->merge(['class' => 'flex-1 border border-gray-300 block w-full transition duration-150 ease-in-out 
-focus:ring-bright-orange focus:border-bright-orange rounded']) }}/>
+@props([
+'id',
+'name',
+'placeholder' => '',
+'type' => 'text',
+])
 
+<input 
+    type="{{ $type }}" 
+    id="{{ $id }}" 
+    name="{{ $name }}" 
+    placeholder="{{ $placeholder }}"
+    {{ $attributes->merge(['class' => 'flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded sm:text-sm border-gray-300']) }}/>

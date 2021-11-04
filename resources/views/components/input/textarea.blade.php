@@ -1,5 +1,15 @@
+@props([
+'id',
+'name',
+'placeholder' => '',
+'rows' => '3',
+])
+
 <textarea 
-    {{ $attributes }} 
-    rows="3" 
-    class="block w-full duration-150 ease-in-out border-gray-300 rounded focus-within:transition focus:border-bright-orange">
+    id="{{ $id }}" 
+    name="{{$name}}" 
+    placeholder="{{$placeholder}}"
+    rows="{{ $rows }}"
+    
+    {{ $attributes->merge(['class' => 'focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md']) }}>
 </textarea>
