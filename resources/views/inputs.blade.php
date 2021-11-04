@@ -32,7 +32,7 @@
 
 
                     <!-- Input: Radio -->
-                    <x-input.radio-group label="Radio group">
+                    <x-input.radio-group label="input.radio-group">
                         <x-input.radio id="radio-group" name="radio-group" value="1" label="radio 1"></x-input.radio>
                         <x-input.radio id="radio-group" name="radio-group" value="2" label="radio 2"></x-input.radio>
                     </x-input.radio-group>
@@ -64,7 +64,7 @@
                         </x-input.select>
                     </x-input.group>
                     <!-- Input: Radio -->
-                    <x-input.radio-group inline label="Radio group">
+                    <x-input.radio-group inline label="input.radio-group">
                         <x-input.radio id="radio-group" name="radio-group" value="1" label="radio 1"></x-input.radio>
                         <x-input.radio id="radio-group" name="radio-group" value="2" label="radio 2"></x-input.radio>
                     </x-input.radio-group>
