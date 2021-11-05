@@ -31,11 +31,17 @@
                     </x-input.group>
 
 
-                    <!-- Input: Radio -->
-                    <x-input.radio-group label="input.radio-group">
-                        <x-input.radio id="radio-group" name="radio-group" value="1" label="radio 1"></x-input.radio>
-                        <x-input.radio id="radio-group" name="radio-group" value="2" label="radio 2"></x-input.radio>
-                    </x-input.radio-group>
+                    <!-- Input: Radio Group-->
+                    <x-input.option-group label="input.option-group: Radio">
+                        <x-input.option type="radio" id="radio-group" name="radio-group" value="1" label="radio 1"></x-input.option>
+                        <x-input.option type="radio" id="radio-group" name="radio-group" value="2" label="radio 2"></x-input.option>
+                    </x-input.option-group>
+
+                    <!-- Input: Checkbox Group-->
+                    <x-input.option-group label="input.option-group: Checkbox">
+                        <x-input.option type="checkbox" id="check-group" name="check-group" value="1" label="check 1"></x-input.option>
+                        <x-input.option type="checkbox" id="check-group" name="check-group" value="2" label="check 2"></x-input.option>
+                    </x-input.option-group>
                 </div>
 
                 <hr class="my-8" />
@@ -63,11 +69,16 @@
                             <option value="2">Option 1</option>
                         </x-input.select>
                     </x-input.group>
-                    <!-- Input: Radio -->
-                    <x-input.radio-group inline label="input.radio-group">
-                        <x-input.radio id="radio-group" name="radio-group" value="1" label="radio 1"></x-input.radio>
-                        <x-input.radio id="radio-group" name="radio-group" value="2" label="radio 2"></x-input.radio>
-                    </x-input.radio-group>
+                    <!-- Input: Radio Group-->
+                    <x-input.option-group inline label="input.option-group: Radio">
+                        <x-input.option type="radio" id="radio-group" name="radio-group" value="1" label="radio 1"></x-input.option>
+                        <x-input.option type="radio" id="radio-group" name="radio-group" value="2" label="radio 2"></x-input.option>
+                    </x-input.option-group>
+                    <!-- Input: Checkbox Group-->
+                    <x-input.option-group inline label="input.option-group: Checkbox">
+                        <x-input.option type="checkbox" id="check-group" name="check-group" value="1" label="check 1"></x-input.option>
+                        <x-input.option type="checkbox" id="check-group" name="check-group" value="2" label="check 2"></x-input.option>
+                    </x-input.option-group>
                 </div>
             </div>
         </div>
