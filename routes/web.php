@@ -41,6 +41,10 @@ Route::get('/buttons', function () {
     return view('buttons');
 })->name('comp.buttons');
 
+Route::get('/badges', function () {
+    return view('badges');
+})->name('comp.badges');
+
 Route::get('/links', function () {
     return view('links');
 })->name('comp.links');
