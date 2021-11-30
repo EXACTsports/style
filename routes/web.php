@@ -53,4 +53,8 @@ Route::get('/inputs', function () {
     return view('inputs');
 })->name('comp.inputs');
 
+Route::get('/steps', function () {
+    return view('steps', ['current' => '2']);
+})->name('comp.steps');
+
 require __DIR__.'/auth.php';
