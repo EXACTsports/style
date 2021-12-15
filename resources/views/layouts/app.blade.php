@@ -213,12 +213,15 @@
                                         Components
                                     </div>
                                     <ul x-show="open" class="pl-12 text-gray-300 ">
+                                        <li><a href="{{ route('comp.logos') }}">Logos</a></li>
                                         <li><a href="{{ route('comp.headings') }}">Headings</a></li>
+                                        <li><a href="{{ route('comp.alerts') }}">Alerts</a></li>
                                         <li><a href="{{ route('comp.buttons') }}">Buttons</a></li>
                                         <li><a href="{{ route('comp.links') }}">Links</a></li>
                                         <li><a href="{{ route('comp.tables') }}">Tables</a></li>
                                         <li><a href="{{ route('comp.inputs') }}">Inputs</a></li>
                                         <li><a href="{{ route('comp.steps') }}">Steps</a></li>
+                                        <li><a href="{{ route('comp.loading') }}">Loading</a></li>
                                     </ul>
                                 </div>
                             </nav>

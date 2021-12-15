@@ -37,6 +37,10 @@ Route::get('/tables', function () {
     return view('tables');
 })->name('comp.tables');
 
+Route::get('/alerts', function () {
+    return view('alerts');
+})->name('comp.alerts');
+
 Route::get('/buttons', function () {
     return view('buttons');
 })->name('comp.buttons');
@@ -44,6 +48,10 @@ Route::get('/buttons', function () {
 Route::get('/badges', function () {
     return view('badges');
 })->name('comp.badges');
+
+Route::get('/logos', function () {
+    return view('logos');
+})->name('comp.logos');
 
 Route::get('/links', function () {
     return view('links');
@@ -56,5 +64,9 @@ Route::get('/inputs', function () {
 Route::get('/steps', function () {
     return view('steps', ['current' => '2']);
 })->name('comp.steps');
+
+Route::get('/loading', function () {
+    return view('loading');
+})->name('comp.loading');
 
 require __DIR__.'/auth.php';
