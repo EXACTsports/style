@@ -6,6 +6,13 @@
             <div class="p-6">
                 <x-headings.h2 class="mb-4">Alerts</x-headings.h2>
                 <hr class="mb-8" />
+
+                <!-- Flag -->
+                <x-alert class="my-4" type="success" flag>
+                    <p class="text-sm">
+                        Successfully uploaded
+                    </p>
+                </x-alert>
                 
                 <!-- Success: Green -->
                 <x-alert class="my-4" type="success">
@@ -24,9 +31,9 @@
                     </p>
                 </x-alert>
 
-                <!-- Failure: Maroon -->
+                <!-- Failure: Red -->
                 <x-alert class="my-4" type="failure">
-                    <h3 class="text-sm font-medium text-red-800">
+                    <h3 class="text-sm font-medium ">
                         There were 2 errors with your submission
                     </h3>
                     <div class="mt-2 text-sm text-red-700">
