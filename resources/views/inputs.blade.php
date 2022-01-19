@@ -29,8 +29,7 @@
                             <option value="2">Option 1</option>
                         </x-input.select>
                     </x-input.group>
-
-
+                    
                     <!-- Input: Radio Group-->
                     <x-input.option-group label="input.option-group: Radio">
                         <x-input.option type="radio" id="radio-group" name="radio-group" value="1" label="radio 1"></x-input.option>

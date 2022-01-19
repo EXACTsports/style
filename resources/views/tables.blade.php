@@ -29,6 +29,10 @@
                         </x-table.row>
                         @endfor
                     </x-slot>
+
+                    <x-slot name="foot">
+                        <x-table.foot colspan="3">Column Heading 1</x-table.foot>
+                    </x-slot>
                 </x-table>
                 
                 <x-headings.h3 class="mb-4">Spect8 Tables</x-headings.h3>
@@ -53,6 +57,12 @@
                             </x-table.cell>
                             </x-table.row>
                         @endfor
+                    </x-slot>
+
+                    <x-slot name="foot">
+                        <x-table.foot>Column Heading 1</x-table.foot>
+                        <x-table.foot>Column Heading 2</x-table.foot>
+                        <x-table.foot>Column Heading 3</x-table.foot>
                     </x-slot>
                 </x-table>
             </div>

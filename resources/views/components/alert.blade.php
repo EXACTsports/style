@@ -22,6 +22,13 @@
         $text = "red-800";
         @endphp
     @break
+    @case('orange')
+        @php
+        $border = "logo-orange";
+        $bg = "amber-300";
+        $text = "gray-800";
+        @endphp
+    @break
 @endswitch
 
 <div {{ $attributes->merge(['class' => 'p-4 border-l-4 border-'.$border.' bg-'.$bg]) }}

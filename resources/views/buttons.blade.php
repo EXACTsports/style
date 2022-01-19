@@ -7,6 +7,10 @@
                 <x-headings.h2 class="mb-4">Buttons</x-headings.h2>
                 <hr class="mb-8" />
 
+                <x-test.cancel>Cancel</x-test.cancel>
+                <x-button.cancel>Cancel</x-button.cancel>
+
+                
                 <div class="mb-8 space-y-4">
                     <x-headings.h4>Standard is medium text</x-headings.h4>
                     <x-button.primary>Primary (w/o icon)</x-button.primary>

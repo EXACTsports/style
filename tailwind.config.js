@@ -1,12 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-    purge: [
+    content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-
     theme: {
         extend: {
             fontFamily: {
@@ -29,12 +29,7 @@ module.exports = {
                 'pale-brown' : '#B99A7B',
                 'beige' : '#F8F4EA',
             },
-        },
-    },
-
-    variants: {
-        extend: {
-            opacity: ['disabled'],
+      
         },
     },
 

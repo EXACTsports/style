@@ -13,6 +13,12 @@
             <tbody class="bg-white divide-y divide-gray-200">
                 {{ $body }}
             </tbody>
+
+            <tfoot class="bg-beige">
+                <tr>
+                    {{ $foot }}
+                </tr>
+            </tfoot>
         </table>
     </div>
 @else
@@ -27,6 +33,12 @@
             <tbody class="bg-white divide-y divide-cool-gray-200">
                 {{ $body }}
             </tbody>
+
+            <tfoot class="bg-gray-100">
+                <tr>
+                    {{ $foot }}
+                </tr>
+            </tfoot>
         </table>
     </div>
 @endif
