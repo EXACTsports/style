@@ -69,4 +69,8 @@ Route::get('/loading', function () {
     return view('loading');
 })->name('comp.loading');
 
+Route::get('/tooltips', function () {
+    return view('tooltips');
+})->name('comp.tooltips');
+
 require __DIR__.'/auth.php';
