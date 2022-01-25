@@ -18,6 +18,7 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
     </head>
     <body class="font-sans antialiased">
         <div class="flex h-screen overflow-hidden bg-gray-100">
@@ -222,6 +223,7 @@
                                         <li><a href="{{ route('comp.inputs') }}">Inputs</a></li>
                                         <li><a href="{{ route('comp.steps') }}">Steps</a></li>
                                         <li><a href="{{ route('comp.loading') }}">Loading</a></li>
+                                        <li><a href="{{ route('comp.tooltips') }}">Tooltips</a></li>
                                     </ul>
                                 </div>
                             </nav>

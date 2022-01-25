@@ -37,6 +37,7 @@
                             <li><a href="{{route('comp.inputs')}}">Inputs</a></li>
                             <li><a href="{{route('comp.steps')}}">Steps</a></li>
                             <li><a href="{{route('comp.loading')}}">Loading</a></li>
+                            <li><a href="{{route('comp.tooltips')}}">Tooltips</a></li>
                         </ul>
                     </div>
                 </div>
