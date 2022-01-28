@@ -11,7 +11,15 @@
                 <x-headings.h3 class="mb-4">Success with Flag</x-headings.h3>
                 <x-alert class="my-4" type="success" flag>
                     <p class="text-sm">
-                        Successfully uploaded
+                        Successfully uploaded.
+                    </p>
+                </x-alert>
+
+                <!-- Alert Black -->
+                <x-headings.h3 class="mb-4">Alert</x-headings.h3>
+                <x-alert class="my-4" type="exclamation">
+                    <p class="text-sm">
+                        Warning. Bad things are happening.
                     </p>
                 </x-alert>
                 
@@ -19,7 +27,7 @@
                 <x-headings.h3 class="mb-4">Success</x-headings.h3>
                 <x-alert class="my-4" type="success">
                     <p class="text-sm">
-                        Successfully uploaded
+                        Successfully uploaded.
                     </p>
                 </x-alert>
 
@@ -38,7 +46,7 @@
                 <x-headings.h3 class="mb-4">Failure</x-headings.h3>
                 <x-alert class="my-4" type="failure">
                     <h3 class="text-sm font-medium ">
-                        There were 2 errors with your submission
+                        There were 2 errors with your submission.
                     </h3>
                     <div class="mt-2 text-sm text-red-700">
                         <ul role="list" class="pl-5 space-y-1 list-disc">
@@ -46,7 +54,7 @@
                                 Your password must be at least 8 characters
                             </li>
                             <li>
-                                Your password must be at least 8 characters
+                                Other problems here
                             </li>
                         </ul>
                     </div>
