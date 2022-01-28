@@ -8,6 +8,16 @@ module.exports = {
         './resources/views/**/*.blade.php',
     ],
     theme: {
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            black: colors.black,
+            white: colors.white,
+            gray: colors.gray,
+            red: colors.red,
+            green: colors.green,
+            yellow: colors.yellow,
+        },
         extend: {
             fontFamily: {
                 sans: ['Noto Sans', ...defaultTheme.fontFamily.sans],
@@ -29,7 +39,6 @@ module.exports = {
                 'pale-brown' : '#B99A7B',
                 'beige' : '#F8F4EA',
             },
-      
         },
     },
 
