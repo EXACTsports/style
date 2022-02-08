@@ -17,7 +17,7 @@
 
                 <!-- Alert Black -->
                 <x-headings.h3 class="mb-4">Alert</x-headings.h3>
-                <x-alert class="my-4" type="exclamation">
+                <x-alert class="my-4" type="alert">
                     <p class="text-sm">
                         Warning. Bad things are happening.
                     </p>
@@ -58,6 +58,22 @@
                             </li>
                         </ul>
                     </div>
+                </x-alert>
+
+                <!-- Gray -->
+                <x-headings.h3 class="mb-4">Gray</x-headings.h3>
+                <x-alert class="my-4" type="gray">
+                    <p class="text-sm">
+                        Something here.
+                    </p>
+                </x-alert>
+
+                <!-- Orange -->
+                <x-headings.h3 class="mb-4">Orange</x-headings.h3>
+                <x-alert class="my-4" type="orange">
+                    <p class="text-sm">
+                        Something here.
+                    </p>
                 </x-alert>
                 
             </div>
